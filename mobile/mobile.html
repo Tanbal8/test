@@ -8,6 +8,10 @@
     <body>
         <div id="element"></div>
         <div id="status"></div>
-        <script src="mobile.js"></script>
+        <script>
+            let js_file = document.createElement("script");
+            if (window.innerWidth >= 768) js_file.src = "mobile-phone.js";
+            else js_file.src = "mobile-pc.js";
+        </script>
     </body>
 </html>
