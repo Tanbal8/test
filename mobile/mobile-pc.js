@@ -1,3 +1,4 @@
+console.log("PC");
 var element = document.getElementById("element");
 var status_div = document.getElementById("status");
 console.log(element);

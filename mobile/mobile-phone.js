@@ -1,3 +1,5 @@
+status_div.innerHTML = "Mobile";
+
 var element = document.getElementById("element");
 var status_div = document.getElementById("status");
 console.log(element);
