@@ -1,7 +1,6 @@
 var element = document.getElementById("element");
 var status_div = document.getElementById("status");
 status_div.innerHTML = "Mobile";
-console.log(element);
 element.ontouchmove = function(e) {
     // status_div.innerHTML += `<br>(${e.touches[0].clientX}, ${e.touches[0].clientY})`;
     element.style.top = e.touches[0].clientY.toFixed(2) + "px";
