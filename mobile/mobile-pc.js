@@ -4,6 +4,3 @@ console.log("PC");
 element.onmousemove = function(e) {
     console.log(e.clientY, e.clientX);
 }
-element.onclick = function(e) {
-    console.log(e.clientY, e.clientX);
-}
