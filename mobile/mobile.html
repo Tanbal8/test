@@ -12,6 +12,7 @@
             let js_file = document.createElement("script");
             if (window.innerWidth >= 768) js_file.src = "mobile-phone.js";
             else js_file.src = "mobile-pc.js";
+            document.body.appendChild(js_file);
         </script>
     </body>
 </html>
