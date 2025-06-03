@@ -8,6 +8,6 @@ window.ontouchmove = function(e) {
 window.onload = function() {
     alert(element)
 }
-element.onclick = function() {
+element.onclick = function(e) {
     status_div.innerHTML += `<br>(${e.clientY}, ${e.clientX})`;
 }
