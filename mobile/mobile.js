@@ -1,7 +1,7 @@
 var element = document.getElementById("element");
-var status = document.getElementById("status");
+var status_div = document.getElementById("status");
 console.log(element);
 window.ontouchmove = function(e) {
     console.log(e);
-    status.innerHTML = e;
+    status_div.innerHTML = e;
 }
