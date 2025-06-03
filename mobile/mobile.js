@@ -5,4 +5,4 @@ window.ontouchmove = function(e) {
     console.log(e);
     status_div.innerHTML = e;
 }
-document.write(element)
+alert(element)
