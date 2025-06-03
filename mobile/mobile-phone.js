@@ -1,7 +1,6 @@
-status_div.innerHTML = "Mobile";
-
 var element = document.getElementById("element");
 var status_div = document.getElementById("status");
+status_div.innerHTML = "Mobile";
 console.log(element);
 window.ontouchmove = function(e) {
     console.log(e);
