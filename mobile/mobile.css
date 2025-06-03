@@ -1,4 +1,11 @@
+body {
+    overflow: hidden;
+}
 #element {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translate(-50%, -50%);
     width: 100px;
     height: 100px;
     background-color: blue;
