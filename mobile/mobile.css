@@ -1,5 +1,6 @@
 body {
     overflow: hidden;
+    overscroll-behavior-y: contain;
 }
 #element {
     position: absolute;
