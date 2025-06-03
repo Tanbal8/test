@@ -11,14 +11,14 @@ let startY = 0;
 window.addEventListener('touchstart', function (e) {
   if (e.touches.length !== 1) return; // فقط یک انگشت
   startY = e.touches[0].clientY;
-}, { passive: false });
+}, { passive: true });
 
 window.addEventListener('touchmove', function (e) {
   const currentY = e.touches[0].clientY;
   const isPullingDown = currentY > startY;
 
   // اگر در بالای صفحه هستیم و کاربر دارد به پایین می‌کشد
-  if (window.scrollY === 0 && isPullingDown) {
+  if (window.scrollY === 0 && isPullingDown&& e.cancelable) {
     e.preventDefault(); // جلوگیری از refresh
   }
 }, { passive: false });
